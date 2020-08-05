@@ -1,6 +1,3 @@
-Create Contant file in below directory
-app/Constants/Constant.php
-
 <?php
 
 namespace App\Constants;
