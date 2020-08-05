@@ -1,2 +1,4 @@
 # RepositoryDesignPattern
-MixPanel Logging using Repository design pattern
+Logging using Repository design pattern with MixPanel
+
+
