@@ -17,7 +17,7 @@ composer install
 
 Create Constant file
 
-file path : app/Constants/Constant.php
+**file path :** app/Constants/Constant.php
 
 ```php
 class Constant
