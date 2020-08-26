@@ -8,11 +8,6 @@ Create Constant file
 Constant.php
 
 ```
-<?php
-
-namespace App\Constants;
-
-
 class Constant
 {
 
@@ -23,6 +18,5 @@ class Constant
     const MIXPANELVAMDELETEUSEREVENTLOG = "VAP_DeleteUserLog";
 
 }
-?>
 ```
 
