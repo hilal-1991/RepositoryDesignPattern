@@ -33,5 +33,20 @@ class Constant
 }
 ```
 
+**Start Respository structure with Interface**
+**file path:** app/Domain/Repositories/Logs/Contracts/InterfaceLogRepository.php
+
+```php
+namespace App\Domain\Repositories\Logs\Contracts;
 
 
+interface iLogRepository
+{
+    /**
+     * @param $sEvent
+     * @param $aPayload
+     */
+    public function addEvent($sEvent,$aPayload);
+}
+
+```
