@@ -27,8 +27,9 @@ class Constant
     /* MixPanel */
     const MIXPANEL= "MIXPANEL";
     const MIXPANELPROJECTKEY = "PROJECT_KEY";
-    const MIXPANELDELETEUSEREVENTLOG = "DeleteUserLog";
-
+    const MIXPANELDELETEUSEREVENTLOG = "DeleteUserLog"; // Its up to you what events to track, how important the naming convention plays into your analysis.
 }
 ```
+
+
 
