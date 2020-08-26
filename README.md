@@ -34,6 +34,7 @@ class Constant
 ```
 
 ***Start Respository structure with Interface***
+
 create general interface for tracking logs
 
 **file path:** app/Domain/Repositories/Logs/Contracts/InterfaceLogRepository.php
@@ -67,8 +68,7 @@ class MixPanelRepository implements InterfaceLogRepository
 
     public function __construct()
     {
-        $aSettings = CommonHelper::getSettings();
-        $this->oMixPanel = \Mixpanel::getInstance($aSettings[Constant::MIXPANEL][Constant::MIXPANELPROJECTKEY]);
+        $this->oMixPanel = \Mixpanel::getInstance(Constant::MIXPANELPROJECTKEY);
     }
 
     /**
