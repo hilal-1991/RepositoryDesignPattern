@@ -1,6 +1,4 @@
-# RepositoryDesignPattern
-
-MixPanel logging using Repository Design Pattern with Laravel/Lumen
+# MixPanel logging using Repository Design Pattern with Laravel/Lumen
 
 If you are using Laravel Or Lumen follow the same directory structure.
 
