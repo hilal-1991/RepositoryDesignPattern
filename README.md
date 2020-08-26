@@ -34,6 +34,7 @@ class Constant
 ```
 
 ***Start Respository structure with Interface***
+create general interface for tracking logs
 
 **file path:** app/Domain/Repositories/Logs/Contracts/InterfaceLogRepository.php
 
@@ -49,5 +50,34 @@ interface InterfaceLogRepository
      */
     public function addEvent($sEvent,$aPayload);
 }
+```
+*** Implements interface in Mixpanel Repository Class ***
 
+**file path :** app/Domain/Repositories/Logs/MixPanelRepository.php
+
+```php
+namespace App\Domain\Repositories\Logs;
+
+use App\Constants\Constant;
+use App\Domain\Repositories\Logs\Contracts\InterfaceLogRepository;
+
+class MixPanelRepository implements InterfaceLogRepository
+{
+    private $oMixPanel;
+
+    public function __construct()
+    {
+        $aSettings = CommonHelper::getSettings();
+        $this->oMixPanel = \Mixpanel::getInstance($aSettings[Constant::MIXPANEL][Constant::MIXPANELPROJECTKEY]);
+    }
+
+    /**
+     * @param $sEvent
+     * @param $aPayload
+     */
+    public function addEvent($sEvent, $aPayload)
+    {
+        $this->oMixPanel->track($sEvent,$aPayload);
+    }
+}
 ```
