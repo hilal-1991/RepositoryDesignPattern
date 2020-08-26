@@ -52,7 +52,7 @@ interface InterfaceLogRepository
     public function addEvent($sEvent,$aPayload);
 }
 ```
-*** Implements interface in Mixpanel Repository Class***
+***Implements interface in Mixpanel Repository Class***
 
 **file path :** app/Domain/Repositories/Logs/MixPanelRepository.php
 
