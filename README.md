@@ -1,11 +1,12 @@
 # RepositoryDesignPattern
+
 MixPanel logging using Repository Design Pattern with Laravel/Lumen
 
-
-If You are using Laravel Or Lumen follow the same directory structure.
+If you are using Laravel Or Lumen follow the same directory structure.
 
 Create Constant file
-Constant.php
+
+file path : app/Constants/Constant.php
 
 ```php
 class Constant
