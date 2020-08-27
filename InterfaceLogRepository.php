@@ -1,10 +1,9 @@
 <?php
 
-
 namespace App\Domain\Repositories\Logs\Contracts;
 
 
-interface iLogRepository
+interface InterfaceLogRepository
 {
     /**
      * @param $sEvent
