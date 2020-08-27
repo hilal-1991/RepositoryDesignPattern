@@ -1,6 +1,6 @@
 # MixPanel logging using Repository Design Pattern with Laravel/Lumen
 
-[GitHub Pages](https://pages.github.com/)
+![Image](https://braze-marketing-assets.s3.amazonaws.com/images/partner_logos/mixpanel.png)
 
 If you are using Laravel Or Lumen follow the same directory structure.
 
