@@ -85,3 +85,7 @@ class MixPanelRepository implements InterfaceLogRepository
     }
 }
 ```
+
+***HTTP Routing***
+
+Route::delete('/users/$id', 'UserController@deleteUser');
